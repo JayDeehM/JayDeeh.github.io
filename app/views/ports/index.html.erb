@@ -1,0 +1,80 @@
+  
+<div id="navbar">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="logo">JayDeeh</span>
+  
+  <div id='new'>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav1()" id="logo">Works<img src="/assets/computer-screen-draw.png" class='logopic'></span> 
+  </div>
+</div>
+
+
+<p id="notice"><%= notice %></p>
+
+<img src="assets/logo.png" id="fp">
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div id="bio">
+      <h1 id="logo">JayDeeh</h1>
+      <br />
+      <p>I'm an 18 year old artist who discovered the art
+      of programming/coding, currently looking for
+      challenges for me to be able to share my talent as an artist.</p>
+    </div>
+    <div id='social'>
+      <a href="https://github.com/JayDeehM" target="_blank" class='logolinks'><img src="/assets/001-github-draw-logo.png" class='logopic'></a> 
+      <a href="https://www.linkedin.com/in/jd-mateo-5a8302144/" target="_blank" class='logolinks'><img src="/assets/002-linkedin-draw-logo.png" class='logopic'></a> 
+      <a href="https://www.facebook.com/jd.mateo.96" target="_blank" class='logolinks'><img src="/assets/003-facebook.png" class='logopic'></a> 
+    </div>
+</div>
+
+<div id="mySidenav1" class="sidenav1">
+  <div id='sidetop'>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+    <span id='add-portfolio'><%= link_to 'New Port', new_port_path %></span> 
+    <span style="font-size:30px;cursor:pointer" onclick="openNav2()" id="logo1">Skills</span>
+  </div>
+
+    <% @ports.each do |port| %>
+      <div class="column">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <%= image_tag port.image.url(:medium) %>
+            <div class="caption">
+              <h1><%= port.title %></h1>
+                <span id='update-portfolio'>
+                  <%= link_to 'Edit', edit_port_path(port) %> |
+                  <%= link_to 'Destroy', port, method: :delete, data: { confirm: 'Are you sure?' } %>
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+</div>
+
+<div id="mySidenav2" class="sidenav2">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+  <span id='add-portfolio1'><%= link_to 'New Skill', new_skill_path %></span> 
+
+     <% @skills.each do |skill| %>
+       <div class="column">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <%= image_tag skill.image.url(:medium) %>
+            <div class="caption">
+              <h1 id='sp'><%= skill.title %></h1>
+                <span id='update-portfolio1'>
+                  <%= link_to 'Edit', edit_skill_path(skill) %> |
+                  <%= link_to 'Destroy', skill, method: :delete, data: { confirm: 'Are you sure?' } %>
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+</div>
+
+
+
