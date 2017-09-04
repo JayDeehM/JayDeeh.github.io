@@ -38,14 +38,14 @@ font-family: 'Gloria Hallelujah', cursive;
 }
 
 .thumbnail {
-    background-image: url(/assets/handmadepaper.png);
+    background-image: url(https://imgur.com/FOa8tmp);
     font-family: 'Indie Flower', cursive;
     -webkit-box-shadow: 1px 1px 20px 5px rgba(150,150,150,0.5);
     box-shadow: 1px 1px 20px 5px rgba(150,150,150,0.5);
 }
 
 body {
-    background-image: url(/assets/ep_naturalwhite.png);
+    background-image: url(https://imgur.com/KqZKjGr);
 }
 
 #logo {
