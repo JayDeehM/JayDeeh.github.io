@@ -78,11 +78,4 @@ function closeNav2() {
     document.getElementById("mySidenav2").style.width = "0";
 }
 
-var mq = window.matchMedia('@media all and (max-width: 480px)');
-if(mq.matches) {
-  function openNav() {
-      document.getElementById("mySidenav").style.width = "100%";
-  }
-} else {
-    // the width of browser is less then 700px
-}
+
