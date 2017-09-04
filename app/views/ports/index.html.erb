@@ -59,18 +59,16 @@
   <span id='add-portfolio1'><%= link_to 'New Skill', new_skill_path %></span> 
 
      <% @skills.each do |skill| %>
-       <div class="column">
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <%= image_tag skill.image.url(:medium) %>
-            <div class="caption">
-              <h1 id='sp'><%= skill.title %></h1>
-                <span id='update-portfolio1'>
-                  <%= link_to 'Edit', edit_skill_path(skill) %> |
-                  <%= link_to 'Destroy', skill, method: :delete, data: { confirm: 'Are you sure?' } %>
-                </span>
-            </div>
-          </div>
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= image_tag skill.image.url(:medium), id:'skillimage' %>
+        </div>
+        <div class="panel-footer">
+          <h1 id='sp'><%= skill.title %></h1>
+            <span id='update-portfolio1'>
+              <%= link_to 'Edit', edit_skill_path(skill) %> |
+              <%= link_to 'Destroy', skill, method: :delete, data: { confirm: 'Are you sure?' } %>
+            </span>
         </div>
       </div>
     <% end %>

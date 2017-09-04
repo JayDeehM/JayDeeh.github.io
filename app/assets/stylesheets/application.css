@@ -205,6 +205,20 @@ p {
 
 #sp {
     font-size: 2rem;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.panel .panel-body {
+    width: 50%;
+    height: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom:5px;
+}
+
+#skillimage {
+    width: 10rem;
+    height: 10rem;
 }
 
 @media (max-width: 480px) {
