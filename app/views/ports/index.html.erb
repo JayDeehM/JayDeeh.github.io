@@ -59,11 +59,11 @@
   <span id='add-portfolio1'><%= link_to 'New Skill', new_skill_path %></span> 
 
      <% @skills.each do |skill| %>
-      <div class="panel panel-default">
-        <div class="panel-body">
+      <div id='skillz'>
+        <div id='skillimagecontainer'>
           <%= image_tag skill.image.url(:medium), id:'skillimage' %>
         </div>
-        <div class="panel-footer">
+        <div id="skilldesc">
           <h1 id='sp'><%= skill.title %></h1>
             <span id='update-portfolio1'>
               <%= link_to 'Edit', edit_skill_path(skill) %> |

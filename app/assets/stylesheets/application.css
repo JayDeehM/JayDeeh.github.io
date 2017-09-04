@@ -219,6 +219,21 @@ p {
 #skillimage {
     width: 10rem;
     height: 10rem;
+    display: block;
+    margin: auto;
+}
+
+#skillimagecontainer {
+    width: 100%;
+}
+
+#skilldesc {
+    text-align: center;
+    margin-top: -20px;
+}
+
+#skillz {
+    margin-bottom: 20px;
 }
 
 @media (max-width: 480px) {
