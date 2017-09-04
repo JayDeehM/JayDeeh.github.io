@@ -71,7 +71,7 @@ function closeNav1() {
 }
 
 function openNav2() {
-    document.getElementById("mySidenav2").style.width = "35%";
+    document.getElementById("mySidenav2").style.width = "20%";
 }
 
 function closeNav2() {
