@@ -1,20 +1,13 @@
   
 <div id="navbar">
   <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="logo">JayDeeh</span>
-  
-  <div id='new'>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav1()" id="logo">Works <img src="https://i.imgur.com/uRLoYN0.png" class='logopic'></span> 
-  </div>
 </div>
-
-
-<p id="notice"><%= notice %></p>
-
-<img src="https://i.imgur.com/fw8jyWk.png" id="fp">
-
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div id='profcont'>
+      <a class="mybutton" href="#"></a>
+    </div>
     <div id="bio">
       <h1 id="logo">JayDeeh</h1>
       <br />
@@ -22,6 +15,7 @@
       of programming/coding, currently looking for
       challenges for me to be able to share my talent as an artist.</p>
     </div>
+    
     <div id='social'>
       <a href="https://github.com/JayDeehM" target="_blank" class='logolinks'><img src="https://i.imgur.com/J8yyYrE.png" class='logopic'></a> 
       <a href="https://www.linkedin.com/in/jd-mateo-5a8302144/" target="_blank" class='logolinks'><img src="https://i.imgur.com/TIEQ4He.png" class='logopic'></a> 
@@ -29,12 +23,14 @@
     </div>
 </div>
 
-<div id="mySidenav1" class="sidenav1">
-  <div id='sidetop'>
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+<div id="main">
+  
+<p id="notice"><%= notice %></p>
+
+    <img src="https://i.imgur.com/fw8jyWk.png" id="fp">
+
     <span id='add-portfolio'><%= link_to 'New Port', new_port_path %></span> 
-    <span style="font-size:30px;cursor:pointer" onclick="openNav2()" id="logo1">Skills</span>
-  </div>
+
 
     <% @ports.each do |port| %>
       <div class="column">
@@ -52,10 +48,9 @@
         </div>
       </div>
     <% end %>
-</div>
 
-<div id="mySidenav2" class="sidenav2">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+
+
   <span id='add-portfolio1'><%= link_to 'New Skill', new_skill_path %></span> 
 
      <% @skills.each do |skill| %>
@@ -72,6 +67,9 @@
         </div>
       </div>
     <% end %>
+
+
+  
 </div>
 
 
