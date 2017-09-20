@@ -11,9 +11,9 @@
     <div id="bio">
       <h1 id="logo">JayDeeh</h1>
       <br />
-      <p>I'm an 18 year old artist who discovered the art
-      of programming/coding, currently looking for
-      challenges for me to be able to share my talent as an artist.</p>
+      <p>An 18 year old junior developer and audio technician with a 
+      strong interest in coding and music aspiring to be have a 
+      full-time career as a coder and an audio engineer.</p>
     </div>
     
     <div id='social'>
@@ -26,11 +26,18 @@
 <div id="main">
   
 <p id="notice"><%= notice %></p>
+    
+    <div id='fpdiv'>
+      <img src="https://i.imgur.com/fw8jyWk.png" id="fp">
+    </div>
+    
+    <div id='log'>
+      <p>An 18 year old junior developer and audio technician with a 
+      strong interest in coding and music aspiring to be have a 
+      full-time career as a coder and an audio engineer.</p>
+    </div>
 
-    <img src="https://i.imgur.com/fw8jyWk.png" id="fp">
-
-    <span id='add-portfolio'><%= link_to 'New Port', new_port_path %></span> 
-
+  <span id='add-portfolio'><%= link_to 'New Port', new_port_path %></span> 
 
     <% @ports.each do |port| %>
       <div class="column">
@@ -53,7 +60,7 @@
 
   <span id='add-portfolio1'><%= link_to 'New Skill', new_skill_path %></span> 
 
-     <% @skills.each do |skill| %>
+    <% @skills.each do |skill| %>
       <div id='skillz'>
         <div id='skillimagecontainer'>
           <%= image_tag skill.image.url(:medium), id:'skillimage' %>
