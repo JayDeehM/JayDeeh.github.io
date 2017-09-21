@@ -147,7 +147,7 @@ body {
 }
 
 .card-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 45px;
 }
 
@@ -172,9 +172,11 @@ img {
 }
   
 .logopic {
-    width: 5rem;
-    height: 5rem;
+    width: 10%;
+    height: 10%;
     float: left;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .logolinks {
@@ -191,6 +193,24 @@ img {
     width: 100%;
     text-align: center;
     margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#skills {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#profpic {
+    border-radius: 100px;
+}
+
+#bio p {
+    font-size: 15px;
 }
 
 @media screen and (max-width: 480px) {
@@ -219,6 +239,10 @@ img {
     
     .card-block {
         margin: 0px;
+    }
+      
+    #log {
+        display: none;
     }
   
 }

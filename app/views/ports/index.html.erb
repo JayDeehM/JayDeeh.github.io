@@ -9,7 +9,7 @@
       <a class="mybutton" href="#"></a>
     </div>
     <div id="bio">
-      <h1 id="logo">JayDeeh</h1>
+      <h1 id="logo"><img src="https://i.imgur.com/MjZVbIG.jpg" id='profpic'></h1>
       <br />
       <p>An 18 year old junior developer and audio technician with a 
       strong interest in coding and music aspiring to be have a 
@@ -37,11 +37,10 @@
 
 
     <span id='add-portfolio1'><%= link_to 'New Skill', new_skill_path %></span> 
-
-    <div id='ports'>
+    <div id='skills'>
+    <h1>Languages</h1>
       <% @skills.each do |skill| %>
-        <div id='ports'>
-          <div class="card">
+          <div class="card" id='skil'>
             <div class='card-img-top', alt='Card image cap'><%= image_tag skill.image.url(:medium) %></div>
               <div class="card-block">
                 <h1 class="card-title"><%= skill.title %></h1>
@@ -51,14 +50,13 @@
                   </p>
               </div>
           </div>
-        </div>
       <% end %>
-    </div> 
+    </div> <br />
 
 
     <span id='add-portfolio'><%= link_to 'New Port', new_port_path %></span> 
-    
-    <div id='skils'>
+    <div id='ports'>
+    <h1>Projects</h1>
       <% @ports.each do |port| %>
           <div class="card" style="text-align: center;">
             <div class='card-img-top', alt='Card image cap'><%= image_tag port.image.url(:medium) %></div>
