@@ -37,11 +37,11 @@
 
 
     <span id='add-portfolio1'><%= link_to 'New Skill', new_skill_path %></span> 
-    <div id='skills'>
-    <h1>Languages</h1>
+    <h1>Languages</h1><br />
+    <div id='skills' class="card-group">
       <% @skills.each do |skill| %>
           <div class="card" id='skil'>
-            <div class='card-img-top', alt='Card image cap'><%= image_tag skill.image.url(:medium) %></div>
+            <div class='card-img-top', alt='Card image cap'><%= image_tag skill.image.url(:thumb) %></div>
               <div class="card-block">
                 <h1 class="card-title"><%= skill.title %></h1>
                   <p id='update-portfolio' class="card-text">
@@ -55,10 +55,10 @@
 
 
     <span id='add-portfolio'><%= link_to 'New Port', new_port_path %></span> 
-    <div id='ports'>
     <h1>Projects</h1>
+    <div id='ports' class="card-group">
       <% @ports.each do |port| %>
-          <div class="card" style="text-align: center;">
+          <div class="card"style='width: 25rem; height: 380px;'>
             <div class='card-img-top', alt='Card image cap'><%= image_tag port.image.url(:medium) %></div>
             <div class="card-block">
               <h1 class="card-title"><%= port.title %></h1>

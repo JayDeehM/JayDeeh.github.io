@@ -132,12 +132,10 @@ body {
 }
 
 .card {
-    float: left;
-    width: 24rem;
-    height: 380px;
+    float: left; 
     display: block;
-    margin: 10px;
-    margin-top: 20px;
+    margin: 20px;
+    margin-top: 20px; 
     background-image: url(https://i.imgur.com/FOa8tmp.png);
 }
 
@@ -169,6 +167,9 @@ img {
 #log {
     text-align: center;
     font-size: 1rem;
+    padding: 50px;
+    margin: auto;
+    display: block;
 }
   
 .logopic {
@@ -211,6 +212,11 @@ img {
 
 #bio p {
     font-size: 15px;
+}
+
+#skil {
+    width: 15rem;
+    height: 380px;
 }
 
 @media screen and (max-width: 480px) {
