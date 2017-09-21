@@ -1,10 +1,10 @@
   
 <div id="navbar">
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="logo">JayDeeh</span>
+  <a style="font-size:30px;cursor:pointer" onclick="openNav()" id="logo">JD<img src="https://i.imgur.com/sr53vLD.png" id="arrow"></a>
 </div>
 
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="https://i.imgur.com/sr53vLD.png" id="arrowclose"></a>
     <div id='profcont'>
       <a class="mybutton" href="#"></a>
     </div>
@@ -36,43 +36,45 @@
     </div>
 
 
-    <span id='add-portfolio'><%= link_to 'New Port', new_port_path %></span> 
-    
-  <div id='ports'>
-    <% @ports.each do |port| %>
-     
-        <div class="card" style="text-align: center;">
-          <div class='card-img-top', alt='Card image cap'><%= image_tag port.image.url(:medium) %></div>
-          <div class="card-block">
-            <h1 class="card-title"><%= port.title %></h1>
-              <p id='update-portfolio' class="card-text">
-                <%= link_to 'Edit', edit_port_path(port) %> |
-                <%= link_to 'Destroy', port, method: :delete, data: { confirm: 'Are you sure?' } %>
-              </p>
+    <span id='add-portfolio1'><%= link_to 'New Skill', new_skill_path %></span> 
+
+    <div id='ports'>
+      <% @skills.each do |skill| %>
+        <div id='ports'>
+          <div class="card">
+            <div class='card-img-top', alt='Card image cap'><%= image_tag skill.image.url(:medium) %></div>
+              <div class="card-block">
+                <h1 class="card-title"><%= skill.title %></h1>
+                  <p id='update-portfolio' class="card-text">
+                    <%= link_to 'Edit', edit_skill_path(skill) %> |
+                    <%= link_to 'Destroy', skill, method: :delete, data: { confirm: 'Are you sure?' } %>
+                  </p>
+              </div>
           </div>
         </div>
-      
-    <% end %>
-  </div> 
+      <% end %>
+    </div> 
 
 
-  <span id='add-portfolio1'><%= link_to 'New Skill', new_skill_path %></span> 
-
-    <% @skills.each do |skill| %>
-      <div id='ports'>
-        <div class="card">
-          <div class='card-img-top', alt='Card image cap'><%= image_tag skill.image.url(:medium) %></div>
+    <span id='add-portfolio'><%= link_to 'New Port', new_port_path %></span> 
+    
+    <div id='skils'>
+      <% @ports.each do |port| %>
+          <div class="card" style="text-align: center;">
+            <div class='card-img-top', alt='Card image cap'><%= image_tag port.image.url(:medium) %></div>
             <div class="card-block">
-              <h1 class="card-title"><%= skill.title %></h1>
+              <h1 class="card-title"><%= port.title %></h1>
                 <p id='update-portfolio' class="card-text">
-                  <%= link_to 'Edit', edit_skill_path(skill) %> |
-                  <%= link_to 'Destroy', skill, method: :delete, data: { confirm: 'Are you sure?' } %>
+                  <%= link_to 'Edit', edit_port_path(port) %> |
+                  <%= link_to 'Destroy', port, method: :delete, data: { confirm: 'Are you sure?' } %>
                 </p>
             </div>
-        </div>
-      </div>
-    <% end %>
+          </div>
+      <% end %>
+    </div> 
 
+
+  
 
   
 </div>

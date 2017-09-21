@@ -21,10 +21,38 @@ font-family: 'Gloria Hallelujah', cursive;
 */
 
 #navbar {
-    padding: 10px;
+    padding: 5px;
     position: fixed;
     width: 100%;
     background-image: url(https://i.imgur.com/FOa8tmp.png);
+    z-index: 1;
+    display: none;
+}
+
+#arrow {
+    width: 2rem;
+    height: 3rem;
+    float: left;
+    -moz-transform: scale(1) rotate(90deg);
+    -webkit-transform: scale(1) rotate(90deg);
+    -o-transform: scale(1) rotate(90deg);
+    -ms-transform: scale(1) rotate(90deg);
+    transform: scale(1) rotate(90deg);
+}
+
+#logo:hover {
+    background-color: transparent;
+}
+
+#arrowclose {
+    width: 2rem;
+    height: 3rem;
+    float: left;
+    -moz-transform: scale(1) rotate(-90deg);
+    -webkit-transform: scale(1) rotate(-90deg);
+    -o-transform: scale(1) rotate(-90deg);
+    -ms-transform: scale(1) rotate(-90deg);
+    transform: scale(1) rotate(-90deg);
 }
 
 p {
@@ -41,6 +69,7 @@ p {
 
 #logo {
     font-family: 'Gloria Hallelujah', cursive; 
+    font-size: 10px;
 }
 
 body {
@@ -109,6 +138,7 @@ body {
     display: block;
     margin: 10px;
     margin-top: 20px;
+    background-image: url(https://i.imgur.com/FOa8tmp.png);
 }
 
 .card-block {
@@ -141,9 +171,33 @@ img {
     font-size: 1rem;
 }
   
-  
+.logopic {
+    width: 5rem;
+    height: 5rem;
+    float: left;
+}
+
+.logolinks {
+    margin: 1rem;
+}
+
+.logolinks:hover {
+    background-color: transparent;
+}
+
+#social {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
 
 @media screen and (max-width: 480px) {
+    
+    #navbar {
+        display: block;
+    }
     
     #fp {
         width: 100%;
@@ -154,7 +208,7 @@ img {
     
     .card {
         width: 20rem;
-        margin-left: 4.5% ;
+        margin-left: 4.5%;
         height: 390px;
     }
     
