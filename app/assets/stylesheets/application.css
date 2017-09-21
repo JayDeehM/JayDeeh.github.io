@@ -18,38 +18,11 @@
 /*
 font-family: 'Indie Flower', cursive;
 font-family: 'Gloria Hallelujah', cursive;
-
 */
 
-#add-portfolio {
-    display: none
-}
-
-#add-portfolio1 {
-    display: none
-}
-
-#update-portfolio {
-    display: none;
-}
-
-#update-portfolio1 {
-    display: none;
-}
-
-.thumbnail {
-    background-image: url(https://i.imgur.com/FOa8tmp.png);
-    font-family: 'Indie Flower', cursive;
-    -webkit-box-shadow: 1px 1px 20px 5px rgba(150,150,150,0.5);
-    box-shadow: 1px 1px 20px 5px rgba(150,150,150,0.5);
-}
-
-body {
-    background-image: url(https://i.imgur.com/KqZKjGr.png);
-}
-
-#logo {
-    font-family: 'Gloria Hallelujah', cursive;
+#navbar {
+    padding: 10px;
+    position: fixed;
 }
 
 p {
@@ -57,6 +30,10 @@ p {
     font-size: 2.5rem;
     text-align: center;
     line-height: 3rem;
+}
+
+body {
+    background-image: url(https://i.imgur.com/KqZKjGr.png);
 }
 
 .sidenav {
@@ -91,132 +68,70 @@ p {
     padding: 16px;
 }
 
-#bio {
-    margin: 10px;
-}
-
-#navbar {
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-}
-
-#new {
-    float: right;
-    display: block;
-}
-
-.thumbnail {
-    display: inline-block;
-    margin:  0.25rem;
-    padding:  1rem;
-    width:  100%; 
-    background:  #efefef;
-}
-
 #fp {
-    width: 55%;
-    height: 55%;
+    width: 50%;
+    height: 50%;
     display: block;
     margin: auto;
 }
 
-.logopic {
-    width: 5rem;
-    height: 5rem;
+#add-portfolio {
+    display: none
 }
 
-.logolinks {
-    margin: 1rem;
+#add-portfolio1 {
+    display: none
 }
 
-.logolinks:hover {
-    background-color: transparent;
+#update-portfolio {
+    display: none;
 }
 
-#social {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+#update-portfolio1 {
+    display: none;
+}
+
+.card {
+    float: left;
+    width: 25rem;
+    height: 360px;
+    display: block;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.card-block {
+    margin: 0px;
     text-align: center;
-    margin-bottom: 25px;
 }
 
-#logo1 {
-    font-family: 'Gloria Hallelujah', cursive;
-    float: right;
-    margin-top: -55px;
-    margin-right: 15px;
-}
-
-#sidetop {
-    width: 100%;
-}
-
-#sp {
+.card-title {
     font-size: 2rem;
-    font-family: 'Gloria Hallelujah', cursive;
 }
 
-.panel .panel-body {
-    width: 50%;
-    height: 50%;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom:5px;
-}
-
-#skillimage {
-    width: 10rem;
-    height: 10rem;
+img {
     display: block;
     margin: auto;
+    padding: 10px 0;
 }
 
-#skillimagecontainer {
-    width: 100%;
-}
-
-#skilldesc {
-    text-align: center;
-    margin-top: -20px;
-}
-
-#skillz {
-    margin-bottom: 20px;
-}
-
-#profpic {
-    width: 50%;
-    height: 50%;
-    border-radius: 200px;
-}
-
-#profcont {
+#ports {
+    display: block;
+    margin: auto;
     text-align: center;
 }
 
-.myButton {
-     width:50px;
-     height:50px;
-     display:block;
-     background-image: url(https://i.imgur.com/J9ZKIUs.jpg);
-}
-
-.myButton:hover {
-     background-image:url(https://i.imgur.com/MjZVbIG.jpg)
-}
-
-@media (min-width: 480px) {
+@media screen and (max-width: 480px) {
     
 #fp {
     width: 100%;
     height: 100%;
 }
 
-#fpdiv {
-    display: block;
-    margin: auto;
+.card {
+    width: 20rem;
+    margin-left: 4.5% ;
 }
+
     
 }

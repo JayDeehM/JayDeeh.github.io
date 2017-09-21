@@ -55,8 +55,8 @@ function activateCheats() {
 }
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "35%";
-    document.getElementById("main").style.marginLeft = "35%";
+    document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("main").style.marginLeft = "100%";
 }
 
 function closeNav() {

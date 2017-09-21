@@ -27,50 +27,48 @@
   
 <p id="notice"><%= notice %></p>
     
-    <div id='fpdiv'>
       <img src="https://i.imgur.com/fw8jyWk.png" id="fp">
-    </div>
-    
+
     <div id='log'>
       <p>An 18 year old junior developer and audio technician with a 
       strong interest in coding and music aspiring to be have a 
       full-time career as a coder and an audio engineer.</p>
     </div>
 
-  <span id='add-portfolio'><%= link_to 'New Port', new_port_path %></span> 
 
+    <span id='add-portfolio'><%= link_to 'New Port', new_port_path %></span> 
+    
+  <div id='ports'>
     <% @ports.each do |port| %>
-      <div class="column">
-        <div class="col-md-4">
-          <div class="thumbnail">
-            <%= image_tag port.image.url(:medium) %>
-            <div class="caption">
-              <h1><%= port.title %></h1>
-                <span id='update-portfolio'>
-                  <%= link_to 'Edit', edit_port_path(port) %> |
-                  <%= link_to 'Destroy', port, method: :delete, data: { confirm: 'Are you sure?' } %>
-                </span>
-            </div>
+     
+        <div class="card" style="text-align: center;">
+          <div class='card-img-top', alt='Card image cap'><%= image_tag port.image.url(:medium) %></div>
+          <div class="card-block">
+            <h1 class="card-title"><%= port.title %></h1>
+              <p id='update-portfolio' class="card-text">
+                <%= link_to 'Edit', edit_port_path(port) %> |
+                <%= link_to 'Destroy', port, method: :delete, data: { confirm: 'Are you sure?' } %>
+              </p>
           </div>
         </div>
-      </div>
+      
     <% end %>
-
+  </div> 
 
 
   <span id='add-portfolio1'><%= link_to 'New Skill', new_skill_path %></span> 
 
     <% @skills.each do |skill| %>
-      <div id='skillz'>
-        <div id='skillimagecontainer'>
-          <%= image_tag skill.image.url(:medium), id:'skillimage' %>
-        </div>
-        <div id="skilldesc">
-          <h1 id='sp'><%= skill.title %></h1>
-            <span id='update-portfolio1'>
-              <%= link_to 'Edit', edit_skill_path(skill) %> |
-              <%= link_to 'Destroy', skill, method: :delete, data: { confirm: 'Are you sure?' } %>
-            </span>
+      <div id='ports'>
+        <div class="card">
+          <div class='card-img-top', alt='Card image cap'><%= image_tag skill.image.url(:medium) %></div>
+            <div class="card-block">
+              <h1 class="card-title"><%= skill.title %></h1>
+                <p id='update-portfolio' class="card-text">
+                  <%= link_to 'Edit', edit_skill_path(skill) %> |
+                  <%= link_to 'Destroy', skill, method: :delete, data: { confirm: 'Are you sure?' } %>
+                </p>
+            </div>
         </div>
       </div>
     <% end %>
