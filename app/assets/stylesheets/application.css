@@ -132,7 +132,6 @@ body {
 }
 
 .card {
-    float: left; 
     display: block;
     margin: 20px;
     margin-top: 20px; 
@@ -153,15 +152,6 @@ img {
     display: block;
     margin: auto;
     padding: 10px 0;
-}
-
-#ports {
-    margin: auto;
-    text-align: center;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
 }
 
 #log {
