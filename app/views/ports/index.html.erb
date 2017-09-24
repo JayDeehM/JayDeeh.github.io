@@ -35,37 +35,39 @@
       full-time career as a coder and an audio engineer.</p>
     </div>
 
-
-    <span id='add-portfolio1'><%= link_to 'New Skill', new_skill_path %></span> 
-    <h1>Languages</h1><br />
-    <div id='skills' class="row">
-      <% @skills.each do |skill| %>
-        <div class="col-sm-3">
-          <div class="card" id='skil'>
-            <div class='card-img-top', alt='Card image cap'><%= image_tag skill.image.url(:thumb) %></div>
-              <div class="card-block">
-                <h1 class="card-title"><%= skill.title %></h1>
-              </div>
-          </div>
-        </div>
-      <% end %>
-    </div> <br />
-
-
-    <span id='add-portfolio'><%= link_to 'New Port', new_port_path %></span> 
-    <h1>Projects</h1>
-    <div id='ports' class="row">
-      <% @ports.each do |port| %>
-        <div class="col-sm-4">
-          <div class="card"style='width: 25rem; height: 380px;'>
-            <div class='card-img-top', alt='Card image cap'><%= image_tag port.image.url(:medium) %></div>
-            <div class="card-block">
-              <h1 class="card-title"><%= port.title %></h1>
+    <div id='skilldiv'>
+      <span id='add-portfolio1'><%= link_to 'New Skill', new_skill_path %></span> 
+      <h1>Languages</h1><br />
+      <div id='skills' class="row">
+        <% @skills.each do |skill| %>
+          <div class="col-sm-3" >
+            <div class="card" id='skil' style='background-color: transparent; border: none;'>
+              <div class='card-img-top', alt='Card image cap'><%= image_tag skill.image.url(:thumb) %></div>
+                <div class="card-block">
+                  <h1 class="card-title"><%= skill.title %></h1>
+                </div>
             </div>
           </div>
-        </div>
-      <% end %>
-    </div> 
+        <% end %>
+      </div>
+    </div> <br />
+
+    <div id='portdiv'>
+      <span id='add-portfolio'><%= link_to 'New Port', new_port_path %></span> 
+      <h1>Projects</h1>
+      <div id='ports' class="row">
+        <% @ports.each do |port| %>
+          <div class="col-sm-4">
+            <div class="card" style='width: 20rem; height: 380px; background-color: transparent; border: none;'>
+              <div class='card-img-top', alt='Card image cap'><%= image_tag port.image.url(:medium) %></div>
+              <div class="card-block">
+                <h1 class="card-title"><%= port.title %></h1>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div> 
+    </div>
 
 
   

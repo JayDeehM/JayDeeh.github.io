@@ -73,7 +73,7 @@ p {
 }
 
 body {
-    background-image: url(https://i.imgur.com/KqZKjGr.png);
+    background-image: url(https://i.imgur.com/FDZEEHz.png);
 }
 
 .sidenav {
@@ -133,9 +133,8 @@ body {
 
 .card {
     display: block;
-    margin: 20px;
+    margin: 10px;
     margin-top: 20px; 
-    background-image: url(https://i.imgur.com/FOa8tmp.png);
 }
 
 .card-block {
@@ -206,7 +205,23 @@ img {
 
 #skil {
     width: 15rem;
-    height: 380px;
+    height: 250px;
+}
+
+#skilldiv {
+    background-image: url(https://i.imgur.com/KqZKjGr.png);
+    width: 100%;
+    margin: 0px;
+    -webkit-box-shadow: 1px 1px 20px 4px rgba(150,150,150,0.4);
+    box-shadow: 1px 1px 20px 4px rgba(150,150,150,0.5);
+}
+
+#portdiv {
+    background-image: url(https://i.imgur.com/KqZKjGr.png);
+    width: 100%;
+    margin: 0px;
+    -webkit-box-shadow: 1px 1px 20px 4px rgba(150,150,150,0.4);
+    box-shadow: 1px 1px 20px 4px rgba(150,150,150,0.5);
 }
 
 @media screen and (max-width: 480px) {
