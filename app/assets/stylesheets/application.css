@@ -236,6 +236,18 @@ img {
     height: 80%;
 }
 
+.image2 {
+    width: 50%;
+    height: 50%;
+}
+
+.newstuff {
+    text-align: center;
+}
+
+.enterfield {
+    width: 300px;
+}
 
 @media screen and (max-width: 480px) {
     
