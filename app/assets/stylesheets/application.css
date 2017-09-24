@@ -139,6 +139,8 @@ body {
 
 .card {
     margin-top: 20px;
+    display: block;
+    margin: auto
 }
 
 .card-block {
