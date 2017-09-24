@@ -42,7 +42,7 @@
         <% @skills.each do |skill| %>
           <div class="col-sm-2" style='float: left;'>
             <div class="card" id='skil' style='background-color: transparent; border: none;'>
-              <div class='card-img-top', alt='Card image cap'><%= image_tag skill.image.url(:thumb) %></div>
+              <div class='card-img-top', alt='Card image cap'><%= image_tag skill.imgur, class:'image' %></div>
                 <div class="card-block">
                   <h1 class="card-title"><%= skill.title %></h1>
                 </div>
@@ -59,7 +59,7 @@
         <% @ports.each do |port| %>
           <div class="col-sm-4">
             <div class="card" style='width: 20rem; height: 380px; background-color: transparent; border: none;'>
-              <div class='card-img-top', alt='Card image cap'><%= image_tag port.image.url(:medium) %></div>
+              <div class='card-img-top', alt='Card image cap'><%= image_tag port.Imgur, class:'image' %></div>
               <div class="card-block">
                 <h1 class="card-title"><%= port.title %></h1>
               </div>

@@ -192,6 +192,7 @@ img {
     justify-content: center;
     align-items: center;
     align-content: center;
+    display: block;
 }
 
 #skills {
@@ -228,6 +229,11 @@ img {
     margin: 0px;
     -webkit-box-shadow: 1px 1px 20px 4px rgba(150,150,150,0.4);
     box-shadow: 1px 1px 20px 4px rgba(150,150,150,0.7);
+}
+
+.image {
+    width: 80%;
+    height: 80%;
 }
 
 
