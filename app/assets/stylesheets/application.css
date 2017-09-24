@@ -62,8 +62,14 @@ p {
     line-height: 3rem;
 }
 
-.card-title {
+.headname {
     font-family: 'Gloria Hallelujah', cursive;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.card-title {
+    font-family: 'Indie Flower', cursive;
     font-size: 15px;
 }
 
@@ -223,6 +229,7 @@ img {
     -webkit-box-shadow: 1px 1px 20px 4px rgba(150,150,150,0.4);
     box-shadow: 1px 1px 20px 4px rgba(150,150,150,0.5);
 }
+
 
 @media screen and (max-width: 480px) {
     

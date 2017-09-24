@@ -37,10 +37,10 @@
 
     <div id='skilldiv'>
       <span id='add-portfolio1'><%= link_to 'New Skill', new_skill_path %></span> 
-      <h1>Languages</h1><br />
+      <h1 class='headname'>Languages</h1><br />
       <div id='skills' class="row">
         <% @skills.each do |skill| %>
-          <div class="col-sm-3" >
+          <div class="col-sm-2" >
             <div class="card" id='skil' style='background-color: transparent; border: none;'>
               <div class='card-img-top', alt='Card image cap'><%= image_tag skill.image.url(:thumb) %></div>
                 <div class="card-block">
@@ -54,7 +54,7 @@
 
     <div id='portdiv'>
       <span id='add-portfolio'><%= link_to 'New Port', new_port_path %></span> 
-      <h1>Projects</h1>
+      <h1 class='headname'>Projects</h1>
       <div id='ports' class="row">
         <% @ports.each do |port| %>
           <div class="col-sm-4">
