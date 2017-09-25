@@ -178,15 +178,10 @@ img {
 }
 
 #social {
-    position: absolute;
     bottom: 0;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 25px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    width: 230px;
     display: block;
+    margin: auto;
 }
 
 #skills {
@@ -249,6 +244,11 @@ img {
     width: 200px;
 }
 
+#pito {
+    font-weight: bold;
+    padding: 20px;
+}
+  
 
 @media screen and (max-width: 480px) {
     
@@ -292,5 +292,5 @@ img {
     #socialize {
         display: none;
     }
-  
+
 }
