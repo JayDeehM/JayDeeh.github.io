@@ -168,15 +168,9 @@ img {
 }
   
 .logopic {
-    width: 10%;
-    height: 10%;
     float: left;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.logolinks {
-    margin: 1rem;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .logolinks:hover {
@@ -249,13 +243,12 @@ img {
     width: 300px;
 }
 
-#socialize {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+#profilelinks {
+    display: block;
+    margin: auto;
+    width: 200px;
 }
+
 
 @media screen and (max-width: 480px) {
     
