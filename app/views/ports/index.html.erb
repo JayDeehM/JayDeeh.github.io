@@ -61,7 +61,7 @@
         <% @ports.each do |port| %>
           <div class="col-sm-4">
             <div class="card" style='width: 20rem; height: 380px; background-color: transparent; border: none;'>
-              <div class='card-img-top', alt='Card image cap'><%= image_tag port.Imgur, class:'image' %></div>
+              <a href="<%= port.git %>" target='_blank' class='card-img-top', alt='Card image cap'><%= image_tag port.Imgur, class:'image' %></a>
               <div class="card-block">
                 <h1 class="card-title"><%= port.title %></h1>
               </div>

@@ -70,6 +70,6 @@ class PortsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def port_params
-      params.require(:port).permit(:title, :image, :Imgur)
+      params.require(:port).permit(:title, :image, :Imgur, :git)
     end
 end

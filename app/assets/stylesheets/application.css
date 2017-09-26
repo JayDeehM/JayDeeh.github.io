@@ -153,6 +153,10 @@ body {
     line-height: 45px;
 }
 
+.card-img-top:hover {
+    background-color: transparent;
+}
+
 img {
     display: block;
     margin: auto;

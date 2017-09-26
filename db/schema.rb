@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170924150845) do
+ActiveRecord::Schema.define(version: 20170926040605) do
 
   create_table "ports", force: :cascade do |t|
     t.string   "title"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20170924150845) do
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
     t.string   "Imgur"
+    t.string   "git"
   end
 
   create_table "skills", force: :cascade do |t|
