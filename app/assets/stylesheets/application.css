@@ -188,13 +188,6 @@ img {
     margin: auto;
 }
 
-#skills {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
 #profpic {
     border-radius: 100px;
 }
@@ -211,7 +204,6 @@ img {
 #skilldiv {
     background-image: url(https://i.imgur.com/KqZKjGr.png);
     width: 100%;
-    margin: 0px;
     -webkit-box-shadow: 1px 1px 20px 4px rgba(150,150,150,0.4);
     box-shadow: 1px 1px 20px 4px rgba(150,150,150,0.7);
 }

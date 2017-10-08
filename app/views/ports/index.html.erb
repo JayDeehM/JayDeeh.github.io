@@ -40,9 +40,9 @@
     <div id='skilldiv'>
       <span id='add-portfolio1'><%= link_to 'New Skill', new_skill_path %></span> 
       <h1 class='headname'>Stack</h1><br />
-      <div id='skills' class="row" style='justify-content: center; align-items: center; align-content: center;'>
+      <div id='skills' class="row" >
         <% @skills.each do |skill| %>
-          <div class="col-sm-2" style='float: left;'>
+          <div class="col-sm-3" style='float: left; '>
             <div class="card" id='skil' style='background-color: transparent; border: none;'>
               <div class='card-img-top', alt='Card image cap'><%= image_tag skill.imgur, class:'image2' %></div>
                 <div class="card-block">
