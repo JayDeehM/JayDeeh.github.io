@@ -186,6 +186,11 @@ img {
     width: 230px;
     display: block;
     margin: auto;
+    text-align: center;
+}
+
+.language {
+    font-size: 20px;
 }
 
 #profpic {
@@ -244,7 +249,7 @@ img {
     font-weight: bold;
     padding: 20px;
 }
-  
+
 
 @media screen and (max-width: 480px) {
     
@@ -287,6 +292,11 @@ img {
       
     #socialize {
         display: none;
+    }
+    
+    .language {
+        font-size: 15px;
+        text-decoration: underline;
     }
 
 }
